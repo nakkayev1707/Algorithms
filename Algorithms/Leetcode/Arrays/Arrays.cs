@@ -14,7 +14,7 @@ public class Arrays
         // Task6();
         // Task7();
         // Task8();
-        Task9();
+        // Task9();
     }
 
     private static void Task9()
