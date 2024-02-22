@@ -7,7 +7,8 @@ public class Binary
     {
         // Task1();
         // Task2();
-        Task3();
+        // Task3();
+        Task4();
     }
     
     private static void Task1()
@@ -25,5 +26,11 @@ public class Binary
     private static void Task3()
     {
         int[] arr = Algorithms.Leetcode.Binary.Task3.Solution.CountBits(4);
+    }
+
+    private static void Task4()
+    {
+        int result = Algorithms.Leetcode.Binary.Task4.Solution.MissingNumber(new []{0, 1, 2, 4, 5});
+        Console.WriteLine(result);
     }
 }
