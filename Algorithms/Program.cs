@@ -1,5 +1,6 @@
 ﻿using Algorithms.Leetcode.Arrays;
 using Algorithms.Leetcode.Binary;
+using Algorithms.Leetcode.DynamicProgramming;
 
 namespace Algorithms;
 
@@ -9,5 +10,6 @@ internal abstract class Program
     {
         Arrays.Run();
         Binary.Run();
+        DynamicProgramming.Run();
     }
 }
