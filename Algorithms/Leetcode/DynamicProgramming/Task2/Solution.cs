@@ -2,26 +2,26 @@
 
 public class Solution
 {
+    // input [1,2,5] 11
+    // output 3
     public static int CoinChange(int[] coins, int amount)
     {
-        int max = coins[0];
-        for (int i = 0; i < coins.Length; i++)
+        int max = amount + 1;
+        int[] dp = new int[amount + 1];
+        Array.Fill(dp, max);
+        dp[0] = 0;
+        
+        for (int i = 1; i <= amount; i++)
         {
-            if (coins[i] > max)
+            foreach (int coin in coins)
             {
-                max = coins[i];
+                if (i >= coin)
+                {
+                    dp[i] = Math.Min(dp[i], dp[i - coin] + 1);
+                }
             }
         }
-
-        if (max < amount) return -1;
-
-        int result = 0;
-        int sum = 0;
-        while (sum != amount)
-        {
-            
-        }
-
-        return result;
+        
+        return dp[amount] == max ? -1 : dp[amount];
     }
 }
