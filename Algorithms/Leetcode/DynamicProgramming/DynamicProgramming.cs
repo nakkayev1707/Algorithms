@@ -6,6 +6,7 @@ public class DynamicProgramming
     {
         Task1();
         Task2();
+        Task3();
     }
     
     private static void Task1()
@@ -17,6 +18,12 @@ public class DynamicProgramming
     private static void Task2()
     {
         int result = Algorithms.Leetcode.DynamicProgramming.Task2.Solution.CoinChange(new []{1,2,5}, 11);
+        Console.WriteLine(result);
+    }
+
+    private static void Task3()
+    {
+        int result = Algorithms.Leetcode.DynamicProgramming.Task3.Solution.LengthOfLIS(new []{10,9,2,5,3,7,101,18});
         Console.WriteLine(result);
     }
 }
