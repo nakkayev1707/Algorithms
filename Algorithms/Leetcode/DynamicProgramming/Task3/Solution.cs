@@ -14,6 +14,18 @@ public static class Solution
         Array.Fill(dp, 1);
 
         int maxLength = 1;
-        throw new NotImplementedException();
+        for (int i = 1; i < n; i++)
+        {
+            for (int j = 0; j < i; j ++)
+            {
+                if (nums[j] < nums[i])
+                {
+                    dp[i] = Math.Max(dp[i], dp[j] + 1);
+                }
+            }
+            maxLength = Math.Max(maxLength, dp[i]);
+        }
+
+        return maxLength;
     }
 }
