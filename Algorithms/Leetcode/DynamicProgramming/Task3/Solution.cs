@@ -4,7 +4,7 @@ public static class Solution
 {
     // Input: nums = [10,9,2,5,3,7,101,18]
     // Output: 4
-    public static int LengthOfLIS(int[] nums)
+    public static int LengthOfLIS(int[]? nums)
     {
         if (nums == null || nums.Length == 0) return 0;
 
@@ -13,10 +13,7 @@ public static class Solution
         
         Array.Fill(dp, 1);
 
+        int maxLength = 1;
         throw new NotImplementedException();
-        // for ()
-        // {
-            // TODO: continue
-        // }
     }
 }
