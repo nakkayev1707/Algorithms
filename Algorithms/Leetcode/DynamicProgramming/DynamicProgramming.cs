@@ -4,9 +4,10 @@ public class DynamicProgramming
 {
     public static void Run()
     {
-        Task1();
-        Task2();
-        Task3();
+        // Task1();
+        // Task2();
+        // Task3();
+        Task4();
     }
     
     private static void Task1()
@@ -24,6 +25,12 @@ public class DynamicProgramming
     private static void Task3()
     {
         int result = Algorithms.Leetcode.DynamicProgramming.Task3.Solution.LengthOfLIS(new []{10,9,2,5,3,7,101,18});
+        Console.WriteLine(result);
+    }
+    
+    private static void Task4()
+    {
+        int result = Algorithms.Leetcode.DynamicProgramming.Task4.Solution.LongestCommonSubsequence("abc", "abc");
         Console.WriteLine(result);
     }
 }
