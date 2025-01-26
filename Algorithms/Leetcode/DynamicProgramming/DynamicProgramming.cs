@@ -30,7 +30,7 @@ public class DynamicProgramming
     
     private static void Task4()
     {
-        int result = Algorithms.Leetcode.DynamicProgramming.Task4.Solution.LongestCommonSubsequence("abc", "abc");
+        int result = Algorithms.Leetcode.DynamicProgramming.Task4.Solution.LongestCommonSubsequence("dasdasdfaasdfasd", "abc");
         Console.WriteLine(result);
     }
 }
