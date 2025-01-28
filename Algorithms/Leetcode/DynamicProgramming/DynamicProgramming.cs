@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Leetcode.DynamicProgramming;
+﻿using System.Collections.ObjectModel;
+
+namespace Algorithms.Leetcode.DynamicProgramming;
 
 public class DynamicProgramming
 {
@@ -7,7 +9,8 @@ public class DynamicProgramming
         // Task1();
         // Task2();
         // Task3();
-        Task4();
+        // Task4();
+        Task5();
     }
     
     private static void Task1()
@@ -31,6 +34,12 @@ public class DynamicProgramming
     private static void Task4()
     {
         int result = Algorithms.Leetcode.DynamicProgramming.Task4.Solution.LongestCommonSubsequence("mhunuzqrkzsnidwbun", "szulspmhwpazoxijwbq");
+        Console.WriteLine(result);
+    }
+    
+    private static void Task5()
+    {
+        bool result = Algorithms.Leetcode.DynamicProgramming.Task5.Solution.WordBreak("leetcode", new List<string> {"leet", "code"});
         Console.WriteLine(result);
     }
 }
