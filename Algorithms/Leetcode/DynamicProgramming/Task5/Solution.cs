@@ -2,7 +2,8 @@
 
 public class Solution
 {
-    public static bool WordBreak(string s, IList<string> wordDict) {
-        
+    public static bool WordBreak(string s, IList<string> wordDict)
+    {
+        return false;
     }
 }
