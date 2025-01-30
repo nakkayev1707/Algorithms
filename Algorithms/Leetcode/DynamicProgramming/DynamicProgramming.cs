@@ -39,7 +39,7 @@ public class DynamicProgramming
     
     private static void Task5()
     {
-        bool result = Algorithms.Leetcode.DynamicProgramming.Task5.Solution.WordBreak("leetcode", new List<string> {"leet", "code"});
+        bool result = Algorithms.Leetcode.DynamicProgramming.Task5.Solution.WordBreak("cars", new List<string> {"car","ca","rs"});
         Console.WriteLine(result);
     }
 }
