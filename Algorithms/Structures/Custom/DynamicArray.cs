@@ -24,24 +24,36 @@ public class DynamicArray
         arr[i] = n;
     }
 
+    // todo: finish impl
     public void PushBack(int n)
     {
-        
+        arr[^1] = n;
     }
 
+    // todo: finish impl
     public int PopBack()
     {
+        return arr[^1];
     }
 
     private void Resize()
     {
+        var newArr = new int[2 * arr.Length];
+        for (var i = 0; i < arr.Length; i ++)
+        {
+            newArr[i] = arr[i];
+        }
+
+        arr = newArr;
     }
 
     public int GetSize()
     {
+        return arr.Length;
     }
 
     public int GetCapacity()
     {
+        
     }
 }
