@@ -54,6 +54,6 @@ public class DynamicArray
 
     public int GetCapacity()
     {
-        
+        throw new NotImplementedException();
     }
 }
