@@ -12,15 +12,21 @@ public class Solution
     // true
     public static bool WordBreak(string s, IList<string> wordDict)
     {
-        if (string.IsNullOrEmpty(s)) return true;
-        if (!wordDict.Any()) return false;
+        bool[] dp = new bool[s.Length + 1];
+        dp[0] = true;
 
-        foreach (string word in wordDict)
+        for (var i = 1; i <= s.Length; i++)
         {
-            s = s.Replace(word, "");
-            if (string.IsNullOrEmpty(s)) return true;
+            for (int j = 0; j < i; j++)
+            {
+                if (dp[j] && wordDict.Contains(s.Substring(j, i - j)))
+                {
+                    dp[i] = true;
+                    break;
+                }
+            }
         }
         
-        return false;
+        return dp[s.Length];
     }
 }
